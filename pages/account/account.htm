@@ -1,9 +1,9 @@
-title = "Аккаунт"
+title = "Личный кабинет"
 url = "/account/:code?"
 layout = "text-container"
 is_hidden = 0
 
-[account]
+[personalAccounts]
 paramCode = "code"
 forceSecure = 0
 ==
@@ -16,5 +16,5 @@ public function onEnd()
 ==
 {##}
 <div class="ui container">
-    {% component 'account' %}
+    {% component 'personalAccounts' %}
 </div>
