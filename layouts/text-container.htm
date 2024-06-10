@@ -6,9 +6,11 @@ security = "all"
 {##}
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     {% partial 'site/head' %}
 </head>
+
 <body class="pushable layout">
     <!-- Sidebar Menu -->
     {% partial 'site/sidebar' %}
@@ -17,7 +19,7 @@ security = "all"
             <nav class="layout__navigation">
                 {% partial 'site/navigation' %}
             </nav>
-            <div class="ui text container">
+            <div class="ui container">
                 <main class="layout__content">
                     <h1>{{ this.page.title }}</h1>
                     {% page %}
@@ -27,9 +29,10 @@ security = "all"
 
         <footer class="layout__footer">
             {% partial 'site/footer' %}
-        </footer>    
+        </footer>
     </div>
 
     {% partial 'site/scripts' %}
 </body>
+
 </html>
